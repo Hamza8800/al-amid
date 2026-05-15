@@ -52,12 +52,12 @@ body{
 }
 .logo-ring::after{
   content:'';position:absolute;inset:3px;border-radius:50%;
-  background:#000;
+  background:rgba(255,255,255,0.04);
   border:1px solid rgba(255,255,255,0.08);
 }
 @keyframes spin{to{transform:rotate(360deg)}}
 .logo-ring img{
-  width:80px;height:80px;object-fit:contain;
+  width:58px;height:58px;object-fit:contain;
   border-radius:50%;z-index:1;position:relative;
   filter:invert(1) brightness(1.1);
 }
@@ -102,6 +102,7 @@ body{
 .platform-btn:nth-child(1){animation-delay:.38s}
 .platform-btn:nth-child(2){animation-delay:.46s}
 .platform-btn:nth-child(3){animation-delay:.54s}
+.platform-btn:nth-child(4){animation-delay:.62s}
 .platform-btn:active{transform:scale(0.96) translateZ(0) !important;}
 .platform-btn:hover{transform:translateY(-3px) scale(1.01) translateZ(0);}
 
@@ -129,6 +130,14 @@ body{
   box-shadow:0 6px 28px rgba(0,0,0,.55),0 1px 0 rgba(255,255,255,.06) inset;
 }
 .btn-tt:hover{box-shadow:0 12px 40px rgba(105,201,208,.28),0 1px 0 rgba(255,255,255,.08) inset;}
+
+/* Mail */
+.btn-mail{
+  background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);
+  border:1px solid rgba(200,160,60,.25);
+  box-shadow:0 6px 28px rgba(0,0,0,.45),0 1px 0 rgba(200,160,60,.08) inset;
+}
+.btn-mail:hover{box-shadow:0 12px 40px rgba(200,160,60,.2),0 1px 0 rgba(200,160,60,.12) inset;}
 
 /* IG */
 .btn-ig{
@@ -242,6 +251,25 @@ body{
         <div class="btn-middle">
           <span class="btn-title">Instagram</span>
           <span class="btn-sub">Photos &amp; Stories</span>
+        </div>
+        <div class="btn-arrow">
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </div>
+    </a>
+
+    <!-- Email -->
+    <a class="platform-btn btn-mail" href="mailto:hamza2008.alamid@gmail.com" target="_blank">
+      <div class="inner">
+        <div class="platform-logo">
+          <svg width="28" height="22" viewBox="0 0 48 38" fill="none">
+            <rect x="2" y="2" width="44" height="34" rx="6" stroke="white" stroke-width="3.5" fill="none"/>
+            <polyline points="2,4 24,22 46,4" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="btn-middle">
+          <span class="btn-title">Email</span>
+          <span class="btn-sub">hamza2008.alamid@gmail.com</span>
         </div>
         <div class="btn-arrow">
           <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
